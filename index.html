@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subeco Chat</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="themes.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="animations.css">
+
+</head>
+<body>
+    <div id="blackout"></div>
+    <nav id="navegator">
+        <div id="repeatChat"><span style="display: flex; gap: 15px;"><i class="bi bi-arrow-repeat"></i><p>Reiniciar chat</p></span></div>
+        <div id="mudarTema"><i class="bi bi-chat-square-text"></i><p>Mudar tema</p></div>
+        <div id="ativarSom"><i class="bi bi-volume-up"></i><p>Ativar som do chat</p></div>
+        <div id="tutorial"><i class="bi bi-lightbulb"></i><p>Tutorial do chat</p></div>
+        <div id="end"><i class="bi bi-trash3"></i><p>Finalizar conversa</p></div>
+        <div id="zoomLetra"><i class="bi bi-zoom-in"></i><p>Aumentar/diminuir letra</p></div>
+        <div id="inverterPosicao"><i class="bi bi-arrow-left-right"></i><p>Inverter posições</p></div>
+        <div id="copiarMsg"><i class="bi bi-copy"></i><p>Copiar alguma mensagem</p></div>
+        <div id="btnVelocidadeChat"><i class="bi bi-fast-forward"></i><p>Velocidade de resposta</p></div>
+        <div id="goHome"><i class="bi bi-house-down-fill"></i><p>Ir ao site principal</p></div>
+    </nav>
+        <header id="hdchat">
+            <div class="box-chat">
+                <div class="character" id="pfpSubeco">
+                    <img src="img/subecoChat.webp" alt="Subeco">
+                </div>
+                <div class="infoChar">
+                    <p class="titleChar">Subeco</p>
+                    <p class="status-chat">Online</p>
+                </div>
+            </div>
+            <div id="menuhd">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+        <div id="warning"></div>
+        <span id="blockingChat"></span>
+        <div id="tamanhoFonte">
+            <p>Aumente ou diminua o tamanho da fonte no chat.<br>Mín. 10, Máx. 21</p>
+            <div>
+                <button id="lower"><i class="bi bi-dash"></i></button>
+                <input type="number" name="numero-fonte" id="fontNumber" value="12">
+                <button id="bigger"><i class="bi bi-plus"></i></button>
+            </div>
+        </div>
+        <section id="chat" class="chat"></section>
+        <div id="btn-panel"></div>
+        <footer>
+
+        </footer>
+        <div id="themes">
+            <div class="themebase">
+                    <img src="img/chat/claro.png" alt="Tema claro">
+                    <div><input type="radio" name="tema" id="light" checked> <p>Claro</p></div>
+                </div>
+                <div class="themebase">
+                    <img src="img/chat/scuro.png" alt="Tema escuro">
+                    <div><input type="radio" name="tema" id="darks"> <p>Escuro</p></div>
+                </div>
+                <div class="themebase">
+                    <img src="img/chat/fofo.png" alt="Tema fofo">
+                    <div><input type="radio" name="tema" id="cute"> <p>Fofo</p></div>
+                </div>
+                <div class="themebase">
+                    <img src="img/chat/marinho.png" alt="Tema marinho">
+                    <div><input type="radio" name="tema" id="sea"> <p>Marinho</p></div>
+                </div>
+                <div class="themebase">
+                    <img src="img/chat/space.png" alt="Tema space">
+                    <div><input type="radio" name="tema" id="space"> <p>Space</p></div>
+                </div>
+            </div>
+            <section id="h"></section>
+        <footer>
+            <img src="img/logo.webp">
+        </footer>
+        <div id="velocidadeResposta">
+            <p>Escolha a velocidade da resposta do Subeco</p>
+            <div><p>Imediatamente</p><div class="interruptor imediato"><div class="bolaInterruptor"></div></div></div>            <div><p>Após 2 segundos</p><div class="interruptor apos2seg"><div class="bolaInterruptor"></div></div></div>            <div><p>Após 6 segundos</p><div class="interruptor apos6seg"><div class="bolaInterruptor"></div></div></div>            <div><p>Após 10 segundos</p><div class="interruptor apos10seg"><div class="bolaInterruptor"></div></div></div>
+        </div>
+<script src="script.js"></script>
+</body>
+</html>

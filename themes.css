@@ -1,0 +1,341 @@
+#chat.light {
+    background-image: url(img/chatBg.webp);
+  }  
+#chat.darks {
+    background-image: url(img/d.webp);
+  }
+#chat.cute{
+    background-image: url(img/f.webp);
+  }
+#chat.sea {
+    background-image: url(img/m.webp);
+    background-size: 200px;
+    background-position: center;
+    animation: downbg 9999s linear infinite alternate;
+  }
+
+#chat.space {
+    background-image: url(img/s.gif);
+    background-size: 600px;
+    background-repeat: repeat;
+    animation: spacebg 9999s linear infinite;
+}
+
+@keyframes spacebg {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 100000px 100000px;
+    }
+}  
+
+  @keyframes downbg {
+    from{
+        background-position-y: 0;
+    }to{
+        background-position-y: 999999px;
+    }
+  }
+
+  /**LIGHT */
+#chat::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+#chat::-webkit-scrollbar-track {
+  /* background: #af0063; */
+  background-color: transparent;
+  border-radius: 4px;
+}
+#chat::-webkit-scrollbar-thumb {
+  /* background: #ffaee1; */
+  background-color: transparent;
+  border-radius: 4px;
+}
+#chat::-webkit-scrollbar-thumb:hover {
+  /* background: #ff95cc; */
+  background-color: transparent;
+}
+
+#chat.light .sent > .tri-chat{
+    border-color: transparent #000 transparent transparent;
+}
+#chat.light .sent > .box{
+    background-color: #000;
+    color: #fff;
+}
+#chat.light .sent .hora-chat{
+    color: #fff;
+}
+
+#chat.light .received > .tri-chat{
+    border-color: transparent #ddd transparent transparent;
+}
+#chat.light .received > .box{
+    background-color: #ddd;
+    color: #333;
+}
+#chat.light .received .hora-chat{
+    color: #000;
+}
+
+#chat.light .dots span{
+    background-color: #666;
+}
+
+#chat.light .dlg{
+    filter: drop-shadow(0 0 1px #000);
+}
+#chat.light #btn-panel{
+    border: #000 10px solid;
+    border-bottom: none;
+}
+#chat.light #btn-panel, #chat.darks #btn-panel{
+    background-image: linear-gradient(360deg, #4e4e4e, #fff);
+}
+
+#chat.light #btn-panel{
+    background-image: linear-gradient(360deg, #4e4e4e, #fff);
+}
+
+#chat.light .botao-num{
+    background-color: #000;
+    color: #fff;
+}
+
+#chat.light .botao-num:hover{
+    background-color: #303030;
+}
+
+  /**darks */
+#chat.darks header{
+    background-image: linear-gradient(black 90%, transparent);
+}
+#chat.darks .sent > .tri-chat{
+    border-color: transparent #262626 transparent transparent;
+}
+#chat.darks .sent > .box{
+    background-color: #262626;
+    color: #fff;
+}
+#chat.darks .sent .hora-chat{
+    color: #fff;
+}
+
+#chat.darks .received > .tri-chat{
+    border-color: transparent #565656 transparent transparent;
+}
+#chat.darks .received > .box{
+    background-color: #565656;
+    color: #000;
+}
+#chat.darks .received .hora-chat{
+    color: #000;
+}
+
+#chat.darks .dots span{
+    background-color: #939393;
+}
+
+#chat.darks #btn-panel{
+    background-image: linear-gradient(360deg, #141414, #202020, #4e4e4e);
+}
+
+#chat.darks .botao-num{
+    background-color: #000000;
+    color: #989898;
+}
+
+#chat.darks .botao-num:hover{
+    background-color: #303030;
+}
+
+  /**CUTE */
+#chat.cute{
+    background-color: #e90086;
+}
+#chat.cute::selection{
+    background-color: #46002b;
+    color: #ffc1ec;
+}
+#chat.cute header{
+    background-image: linear-gradient(#cf007c 90%, transparent);
+    filter: drop-shadow(0 0 0 transparent);
+}
+#chat.cute footer{
+    background-color: #e90086;
+}
+
+#chat.cute .sent > .tri-chat{
+    border-color: transparent #cf007c transparent transparent;
+}
+#chat.cute .sent > .box{
+    background-color: #cf007c;
+    color: #fff9fd;
+}
+#chat.cute .sent .hora-chat{
+    color: #fff9fd;
+}
+
+#chat.cute .received > .tri-chat{
+    border-color: transparent #fff9fd transparent transparent;
+}
+#chat.cute .received > .box{
+    background-color: #fff9fd;
+    color: #e90086;
+}
+#chat.cute .received .hora-chat{
+    color: #e90086;
+}
+
+#chat.cute .dlg{
+    filter: drop-shadow(0 0 1px #a40070);
+}
+
+#chat.cute #btn-panel{
+    background-image: linear-gradient(360deg, #e90086, #fff);
+}
+
+#chat.cute .dots span{
+    background-color: #80004f;
+}
+
+/* #chat.cute #btn-panel{
+    background-image: linear-gradient(360deg, #ff0095, #ffd2e6);
+} */
+
+#chat.cute .botao-num{
+    background-color: #fff2fb;
+    color: #ff008c;
+}
+
+#chat.cute .botao-num:hover{
+    background-color: #ffc1ec;
+}
+
+  /**SEA */
+#chat.sea{
+    background-color: #000918;
+}
+#chat.sea::selection{
+    background-color: #000918;
+    color: #b5b5c0;
+}
+#chat.sea header{
+    background-image: linear-gradient(#000918 90%, transparent);
+    filter: drop-shadow(0 0 0 transparent);
+}
+#chat.sea footer{
+    background-color: #000918;
+}
+
+#chat.sea .sent > .tri-chat{
+    border-color: transparent #00050d transparent transparent;
+}
+#chat.sea .sent > .box{
+    background-color: #00050d;
+    color: #5076bc;
+}
+#chat.sea .sent .hora-chat{
+    color: #5076bc;
+}
+
+#chat.sea .received > .tri-chat{
+    border-color: transparent #2f67c7 transparent transparent;
+}
+#chat.sea .received > .box{
+    background-color: #2f67c7;
+    color: #001d51;
+}
+#chat.sea .received .hora-chat{
+    color: #001d51;
+}
+
+#chat.sea #btn-panel{
+    background-image: linear-gradient(360deg, #00050d, #456cb0);
+}
+
+#chat.sea .dots span{
+    background-color: #001180;
+}
+
+#chat.sea #btn-panel{
+    background-image: linear-gradient(360deg, #050027, #050023);
+}
+
+#chat.sea .botao-num{
+    background-color: #092a50;
+    color: #bebebe;
+}
+
+#chat.sea .botao-num:hover{
+    background-color: #0b417f;
+}
+
+  /**SPACE */
+#chat.space{
+    background-color: #000918;
+}
+#chat.space::selection{
+    background-color: #150024;
+    color: #d2fdff;
+}
+#chat.space header{
+    background-image: linear-gradient(#1c0023 90%, transparent);
+    filter: drop-shadow(0 0 0 transparent);
+}
+#chat.space footer{
+    background-color: #000918;
+}
+
+#chat.space .sent > .tri-chat{
+    border-color: transparent #000918 transparent transparent;
+}
+#chat.space .sent > .box{
+    background-color: #00050d;
+    background-image: linear-gradient(45deg, #00605a, #571e45, #400054);
+    color: #e3edff;
+    border-bottom-right-radius: 0;
+
+}
+#chat.space .sent .hora-chat{
+    color: #e3edff;
+}
+
+#chat.space .received > .tri-chat{
+    border-color: transparent #002127 transparent transparent;
+}
+#chat.space .received > .box{
+    background-color: #432fc7;
+    background-image: linear-gradient(45deg, #002127, #7f0b7b);
+    color: #eefff0;
+    border-radius: 45px;
+    border-bottom-left-radius: 0;
+}
+#chat.space .received .hora-chat{
+    color: #eefff0;
+}
+
+#chat.space #btn-panel{
+    background-image: linear-gradient(360deg, #00050d, #456cb0);
+    border: 3px solid #ffffff88;
+}
+
+#chat.space .dots span{
+    background-color: #6de9e0;
+}
+
+#chat.space #btn-panel{
+    background-image: linear-gradient(360deg, #050027, #050023);
+}
+
+#chat.space .botao-num{
+    background-color: #092a50;
+    color: #bebebe;
+    border: 10px solid #ffffff84;
+}
+
+#chat.sea .botao-num:hover{
+    background-color: #0b417f;
+}
